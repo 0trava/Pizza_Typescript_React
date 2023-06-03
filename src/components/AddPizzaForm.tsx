@@ -1,5 +1,5 @@
 import React, {FC, useState, ChangeEvent, FormEvent } from 'react';
-import './style.css';
+import './styles.css';
 
 const initState = {
     title: '',
@@ -46,7 +46,7 @@ const AddPizzaForm: FC = () => {
          onChange={handleChange}
          value={newPizza.img} />
 
-         <button type="submit">Add to menu</button>
+         <button type="submit">+Add to menu</button>
     </form>
   )
 
