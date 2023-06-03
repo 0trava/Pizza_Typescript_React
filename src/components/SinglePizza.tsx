@@ -1,15 +1,26 @@
-import React, {FC} from 'react';
+import React, {FC, useState} from 'react';
 import {AiFillEdit, AiFillDelete} from 'react-icons/ai';
 import Pizza from './models/Pizza';
+import EditPizzaForm from './EditPizzaForm';
 
 import './styles.css';
 
 interface SinglePizzaProps {
     pizza: Pizza;
+    updatePizza: (newPizza:Pizza) => void;
 }
 
 
-const SinglePizza: FC<SinglePizzaProps> = ({pizza}) => {
+const SinglePizza: FC<SinglePizzaProps> = ({pizza, updatePizza}) => {
+    const [edit, setEdit] = useState<boolean>(false);
+
+    const handleTaggleEdit = () => {
+        setEdit(!edit);
+
+    }
+
+
+
   return (
     <div className='pizza'>
         <img src={`./images/pizza-${pizza.img}.jpg`} alt={pizza.title} />
@@ -17,9 +28,13 @@ const SinglePizza: FC<SinglePizzaProps> = ({pizza}) => {
         <span>{pizza.price}$</span>
 
         <div className='pizza-controls'>
-            <AiFillEdit/>
+            <AiFillEdit onClick={handleTaggleEdit}/>
             <AiFillDelete/>
         </div>
+
+        {edit 
+        ? <EditPizzaForm data={pizza} updatePizza={updatePizza} handleTaggleEdit={handleTaggleEdit}/>
+        : null}
 
     </div>
   )
