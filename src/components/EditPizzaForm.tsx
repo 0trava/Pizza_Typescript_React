@@ -7,6 +7,7 @@ interface EditPizzaFormProps {
     data: Pizza;
     updatePizza: (newPizza:Pizza) => void;
     handleTaggleEdit: () => void;
+
 }
 
 

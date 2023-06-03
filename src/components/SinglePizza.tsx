@@ -8,10 +8,11 @@ import './styles.css';
 interface SinglePizzaProps {
     pizza: Pizza;
     updatePizza: (newPizza:Pizza) => void;
+    deletePizza: (id: number) => void;
 }
 
 
-const SinglePizza: FC<SinglePizzaProps> = ({pizza, updatePizza}) => {
+const SinglePizza: FC<SinglePizzaProps> = ({pizza, updatePizza, deletePizza}) => {
     const [edit, setEdit] = useState<boolean>(false);
 
     const handleTaggleEdit = () => {
@@ -29,7 +30,7 @@ const SinglePizza: FC<SinglePizzaProps> = ({pizza, updatePizza}) => {
 
         <div className='pizza-controls'>
             <AiFillEdit onClick={handleTaggleEdit}/>
-            <AiFillDelete/>
+            <AiFillDelete onClick={ () => deletePizza(pizza.id)}/>
         </div>
 
         {edit 
