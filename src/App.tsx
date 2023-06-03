@@ -23,7 +23,7 @@ const App: FC = () => {
   return (
     <div className="App">
       <div className='wrap'>
-        <span className='heading'>Наша піцерія</span>
+        <span className='heading'>The Best PiZZa place </span>
         <AddPizzaForm addPizza={addPizza}/>
         <DisplayPizzas pizzasList={pizzasList}  updatePizza={updatePizza}/>
       </div>
