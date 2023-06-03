@@ -9,14 +9,16 @@ import './App.css';
 const App: FC = () => {
   const [pizzasList, setPizzasList] = useState<Pizza[]>([]);
 
-
+  const addPizza = (newPizza: Pizza) => {
+    setPizzasList([...pizzasList, newPizza]);
+  }
 
 
   return (
     <div className="App">
       <div className='wrap'>
         <span className='heading'>Наша піцерія</span>
-        <AddPizzaForm/>
+        <AddPizzaForm addPizza={addPizza}/>
       </div>
       
     </div>
