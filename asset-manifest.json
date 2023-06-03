@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Pizza_Typescript_React/static/css/main.f348f479.css",
+    "main.js": "/Pizza_Typescript_React/static/js/main.0ed9f202.js",
+    "index.html": "/Pizza_Typescript_React/index.html",
+    "main.f348f479.css.map": "/Pizza_Typescript_React/static/css/main.f348f479.css.map",
+    "main.0ed9f202.js.map": "/Pizza_Typescript_React/static/js/main.0ed9f202.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f348f479.css",
+    "static/js/main.0ed9f202.js"
+  ]
+}
