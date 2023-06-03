@@ -1,7 +1,9 @@
 import React, { FC, useState } from 'react';
+import './App.css';
+
 import AddPizzaForm from './components/AddPizzaForm';
 import Pizza from './components/models/Pizza';
-import './App.css';
+import DisplayPizzas from './components/DisplayPizzas';
 
 
 
@@ -19,6 +21,7 @@ const App: FC = () => {
       <div className='wrap'>
         <span className='heading'>Наша піцерія</span>
         <AddPizzaForm addPizza={addPizza}/>
+        <DisplayPizzas pizzasList={pizzasList}/>
       </div>
       
     </div>

@@ -52,9 +52,10 @@ const AddPizzaForm: FC<AddPizzaFormProps> = ({addPizza}) => {
          value={newPizza.price} />
 
         <input
-         type="text"
+         type="number"
          name="img"
-         placeholder='Image'
+         placeholder='Images'
+         min="1" max="6"
          onChange={handleChange}
          value={newPizza.img} />
 
