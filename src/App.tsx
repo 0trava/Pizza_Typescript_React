@@ -7,21 +7,36 @@ import DisplayPizzas from './components/DisplayPizzas';
 
 
 
-
 const App: FC = () => {
-  const [pizzasList, setPizzasList] = useState<Pizza[]>([]);
+
+  const initialState2: any = window.localStorage.getItem('pizzas');
+  const test = JSON.parse(initialState2);
+  let initialState = [];
+
+  if (test) {
+    initialState = test;
+  } 
+  const [pizzasList, setPizzasList] = useState<Pizza[]>(initialState);
+
+
+  console.log(test);
+  console.log(pizzasList);
 
   const addPizza = (newPizza: Pizza) => {
     setPizzasList([...pizzasList, newPizza]);
+    window.localStorage.setItem ('pizzas', JSON.stringify([...pizzasList, newPizza]));
   }
 
   const updatePizza = (newPizza: Pizza) => {
-    setPizzasList(pizzasList.map((pizza) => (pizza.id === newPizza.id ? newPizza : pizza)));
+    const updatePizzaList = pizzasList.map((pizza) => (pizza.id === newPizza.id ? newPizza : pizza));
+    setPizzasList(updatePizzaList);
+    window.localStorage.setItem ('pizzas', JSON.stringify(updatePizzaList));
   }
 
   const deletePizza = (id: number) => {
     const newPizzaList = pizzasList.filter(pizza => pizza.id !== id);
     setPizzasList(newPizzaList);
+    window.localStorage.setItem ('pizzas', JSON.stringify(newPizzaList));
   }
 
 

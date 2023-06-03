@@ -5,4 +5,4 @@ type Pizza = {
     img: string,
 }
 
-export default Pizza
+export default Pizza;
