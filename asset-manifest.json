@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Pizza_Typescript_React/static/css/main.4a8339a0.css",
-    "main.js": "/Pizza_Typescript_React/static/js/main.79ea31c0.js",
+    "main.css": "/Pizza_Typescript_React/static/css/main.3c1964ad.css",
+    "main.js": "/Pizza_Typescript_React/static/js/main.5bf7fb03.js",
     "static/media/pizza-5.jpg": "/Pizza_Typescript_React/static/media/pizza-5.14adf4d8fe3cd2f30069.jpg",
     "static/media/pizza-2.jpg": "/Pizza_Typescript_React/static/media/pizza-2.6294921185bfc3c9805c.jpg",
     "static/media/pizza-3.jpg": "/Pizza_Typescript_React/static/media/pizza-3.9b4722cbbc63b8995b74.jpg",
@@ -9,11 +9,11 @@
     "static/media/pizza-1.jpg": "/Pizza_Typescript_React/static/media/pizza-1.54f33a174e2beecd28a9.jpg",
     "static/media/pizza-4.jpg": "/Pizza_Typescript_React/static/media/pizza-4.b14d58cf797019d15a7a.jpg",
     "index.html": "/Pizza_Typescript_React/index.html",
-    "main.4a8339a0.css.map": "/Pizza_Typescript_React/static/css/main.4a8339a0.css.map",
-    "main.79ea31c0.js.map": "/Pizza_Typescript_React/static/js/main.79ea31c0.js.map"
+    "main.3c1964ad.css.map": "/Pizza_Typescript_React/static/css/main.3c1964ad.css.map",
+    "main.5bf7fb03.js.map": "/Pizza_Typescript_React/static/js/main.5bf7fb03.js.map"
   },
   "entrypoints": [
-    "static/css/main.4a8339a0.css",
-    "static/js/main.79ea31c0.js"
+    "static/css/main.3c1964ad.css",
+    "static/js/main.5bf7fb03.js"
   ]
 }
