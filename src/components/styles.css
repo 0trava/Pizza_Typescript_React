@@ -11,6 +11,7 @@ form {
   display: flex;
   flex-wrap: wrap;
   max-width: 520px;
+  justify-content: center;
 }
 
 form input {
@@ -55,17 +56,76 @@ input[type=submit] {
   background: white;
   border: 1px solid #ededed;
   box-shadow: 0 12px 24px 0 rgba(0,0,0,0.09);
+
   position: relative;
   display: flex;
   flex-direction: column;
   padding: 12px;
   margin-bottom: 22px;
+  
 }
 
-.pizza img {
-  width: 252px;
-  height: 200px;
-  object-fit: contain;
+
+
+
+.pizza_img_1 {
+  width: 250px;
+  height: 250px;
+  /* object-fit: contain; */
+  background-image: url(../../public/images/pizza-1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.pizza_img_2 {
+  width: 250px;
+  height: 250px;
+  /* object-fit: contain; */
+  background-image: url(../../public/images/pizza-2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.pizza_img_3 {
+  width: 250px;
+  height: 250px;
+  /* object-fit: contain; */
+  background-image: url(../../public/images/pizza-3.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.pizza_img_4 {
+  width: 250px;
+  height: 250px;
+  /* object-fit: contain; */
+  background-image: url(../../public/images/pizza-4.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.pizza_img_5 {
+  width: 250px;
+  height: 250px;
+  /* object-fit: contain; */
+  background-image: url(../../public/images/pizza-5.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.pizza_img_6 {
+  width: 250px;
+  height: 250px;
+  /* object-fit: contain; */
+  background-image: url(../../public/images/pizza-6.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .pizza span {
@@ -154,11 +214,25 @@ input[type=submit] {
   color:#f2f2f2;
 }
 
+
+
+
+
+
+
+
+
+
+
+
 /* Страница каждой пиццы */
+
 .pizza-page img {
   width: 420px;
   height: 100%;
   object-fit: contain;
+
+
 }
 .pizza-page h2 {
   font-size: 52px;
@@ -172,4 +246,74 @@ input[type=submit] {
 .pizza-page span {
   font-size: 42px;
   transform: rotate(4deg);
+}
+
+.label_box{
+  display: flex;
+}
+
+.label1{
+  display: flex;
+  color: #f00;
+  background-image: url(../../public/images/pizza-1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 80px;
+  height: 80px;
+}
+
+.label2{
+  display: flex;
+  color: #f00;
+  background-image: url(../../public/images/pizza-2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 80px;
+  height: 80px;
+}
+
+.label3{
+  display: flex;
+  color: #f00;
+  background-image: url(../../public/images/pizza-3.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 80px;
+  height: 80px;
+}
+
+.label4{
+  display: flex;
+  color: #f00;
+  background-image: url(../../public/images/pizza-4.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 80px;
+  height: 80px;
+}
+
+.label5{
+  display: flex;
+  color: #f00;
+  background-image: url(../../public/images/pizza-5.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 80px;
+  height: 80px;
+}
+
+.label6{
+  display: flex;
+  color: #f00;
+  background-image: url(../../public/images/pizza-6.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 80px;
+  height: 80px;
 }
