@@ -20,13 +20,24 @@ const AddPizzaForm: FC<AddPizzaFormProps> = ({addPizza}) => {
     const [newPizza, setNewPizza] = useState<{title: string, price: string, img: string }>(initState)
 
     const handleChange = (e: ChangeEvent<HTMLInputElement> ) => {
-        const {name, value} = e.target;
-        setNewPizza({...newPizza, [name]: value});
+        console.log(e.target.name);
+        if (e.target.name === 'img') {
+            const {name, id} = e.target;
+            setNewPizza({...newPizza, [name]: id});
+            console.log(newPizza);
+        } else {
+            const {name, value} = e.target;
+            setNewPizza({...newPizza, [name]: value});
+        }
+
+
+
+
     }
 
     const handleSubmit = (e: FormEvent<HTMLFormElement>) =>{
         e.preventDefault();
-        console.log(e);
+        
         const {title, price, img} = newPizza;
         console.log(newPizza);
 
@@ -58,31 +69,32 @@ const AddPizzaForm: FC<AddPizzaFormProps> = ({addPizza}) => {
          name="img"
          placeholder='Images'
          min="1" max="6"
-         onChange={handleChange}
-         value={newPizza.img} />
+        //  onChange={handleChange}
+         value={newPizza.img}
+         disabled />
 
         <div>
-            <input type="radio" name="img"  id="1"/>
+            <input type="radio" name="img"  id="1" onChange={handleChange}/>
             <label className='label1' htmlFor = "1"></label>
         </div>
         <div>
-            <input type="radio" name="img"  id="2"/>
+            <input type="radio" name="img"  id="2" onChange={handleChange}/>
             <label className='label2' htmlFor = "2" ></label>
         </div>
         <div>
-            <input type="radio" name="img"  id="3"/>
+            <input type="radio" name="img"  id="3" onChange={handleChange}/>
             <label className='label3' htmlFor = "3"></label>
         </div>
         <div>
-            <input type="radio" name="img"  id="4"/>
+            <input type="radio" name="img"  id="4" onChange={handleChange}/>
             <label className='label4' htmlFor = "4"></label>
         </div>
         <div>
-            <input type="radio" name="img"  id="5"/>
+            <input type="radio" name="img"  id="5" onChange={handleChange}/>
             <label className='label5' htmlFor = "5"></label>
         </div>
         <div>
-            <input type="radio" name="img"  id="6"/>
+            <input type="radio" name="img"  id="6" onChange={handleChange}/>
             <label className='label6' htmlFor = "6"></label>
         </div>
 
