@@ -317,3 +317,12 @@ input[type=submit] {
   width: 80px;
   height: 80px;
 }
+
+.container{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 0 30px;
+  margin-left: 60px;
+  margin-right: 60px;
+
+}
