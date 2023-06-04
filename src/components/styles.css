@@ -2,6 +2,26 @@
   box-sizing: border-box;
 }
 
+.heading{
+  color: #ededed;
+}
+
+
+.wrap::after{
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 44.3vh;
+  left: 0;
+  top: 0;
+  background-image: url(https://primapizza.zp.ua/wp-content/uploads/2014/05/03a.jpg);
+  background-repeat: no-repeat;
+  /* background-position: center; */
+  background-size: cover;
+  z-index: -1;
+  border-bottom: 6px solid #000 ;
+}
+
 /* Форма */
 form {
   margin-bottom: 52px;
@@ -12,6 +32,7 @@ form {
   flex-wrap: wrap;
   max-width: 520px;
   justify-content: center;
+  background-color: white;
 }
 
 form input {
@@ -213,7 +234,6 @@ input[type=submit] {
   pointer-events: none;
   color:#f2f2f2;
 }
-
 
 
 

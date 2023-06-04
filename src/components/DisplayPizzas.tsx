@@ -1,6 +1,7 @@
 import React, {FC} from 'react';
 import './styles.css';
 
+
 import SinglePizza from './SinglePizza';
 import Pizza from './models/Pizza';
 
@@ -18,6 +19,7 @@ const DisplayPizzas : FC<DisplayPizzasProps> = ({pizzasList, updatePizza, delete
 
   return (
     <div className='container'>
+
         {pizzasList.map((pizza) => {
             return <SinglePizza key = {pizza.id} pizza={pizza} updatePizza={updatePizza} deletePizza={deletePizza}/>
         })}

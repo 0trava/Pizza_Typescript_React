@@ -5,6 +5,8 @@ import AddPizzaForm from './components/AddPizzaForm';
 import Pizza from './components/models/Pizza';
 import DisplayPizzas from './components/DisplayPizzas';
 
+import {GiFullPizza} from 'react-icons/gi';
+
 
 
 const App: FC = () => {
@@ -43,7 +45,8 @@ const App: FC = () => {
   return (
     <div className="App">
       <div className='wrap'>
-        <span className='heading'>The Best PiZZa place </span>
+        
+        <span className='heading'><GiFullPizza/>  The Best PiZZa place </span>
         <AddPizzaForm addPizza={addPizza}/>
         <DisplayPizzas pizzasList={pizzasList}  updatePizza={updatePizza} deletePizza={deletePizza}/>
       </div>
